@@ -28,8 +28,8 @@ const PosterCard = ({ classes, posterUrl, movieDetails }) => (
         <Typography component="p">{movieDetails.overview}</Typography>
       </CardContent>
       <CardActions>
-        <Button color="primary" href={lenke + movieDetails}>
-          Primary
+        <Button color="primary" href={lenke + movieDetails.id}>
+          Read more
         </Button>
         {/* TODO */}
       </CardActions>
