@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
+import Button from 'material-ui';
 import Card, { CardActions, CardContent, CardMedia } from 'material-ui/Card';
 import Typography from 'material-ui/Typography';
 
@@ -12,6 +13,8 @@ const styles = {
     height: 750,
   },
 };
+
+const lenke = 'https://www.themoviedb.org/movie/';
 
 // This component renders the movie poster and some details about the movie
 const PosterCard = ({ classes, posterUrl, movieDetails }) => (
@@ -25,6 +28,9 @@ const PosterCard = ({ classes, posterUrl, movieDetails }) => (
         <Typography component="p">{movieDetails.overview}</Typography>
       </CardContent>
       <CardActions>
+        <Button color="primary" href={lenke + movieDetails}>
+          Primary
+        </Button>
         {/* TODO */}
       </CardActions>
     </Card>
