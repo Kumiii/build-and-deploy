@@ -5,6 +5,12 @@ cache:
   directories:
   - node_modules
 script:
-  - npm run lint
-  - npm test
-  - npm run build
+- npm run lint
+- npm test
+- npm run build
+deploy:
+  provider: heroku
+  app: bop-build-and-deploy
+  skip_cleanup: true
+  api_key:
+    secure: jTUOc6OaN6ryhzZVVCqTeChyvTv8aE56ueZk7Ni6HZIAz6eRMAWf/hiIGckYA7StpnpwWia7G5Tx2XrekPWH+fmwudgl/2b850s2qCoz9njtza3bxFdLbLPDY2ujTTq6tcBg2k4IkhnZWELDYDlmqh1gT2hVKWmq5xxv6uhC8qeBXaLzWpPISus9VCEjijgVQ6WjnqlnDnGmo4cq+ZHrHHJCpGCOfGtZT8JFsVGQqFj2dJRmI8I8fueGdO2qUJTrpDU7QqNhRh6AdjNQjHBGI+GAYcWzmURjlf6aCzIj2VLXdKsminFb4CWP/A+sX4mrLYIitCqra2dmVebxMXZs6m0b1CRcpa8OA8tRb+beu7he3bf+iWWYnU3sD1Gxwff9asq1MUL4nta5nh2pFKD2I4mCuf8E/KqqAN+4ElYysvhsJknEcVbOi7ra9PQZDhcPlW4e5UXtWAqSnW+DRK0aAKs/mfJ51uJUOpkGu7x1tHdvdwk2u0iZfMmy+hf4VoF49lV2V8egPiljQGGVTdVyZ+VGAgXI9IPrikLvcdlZr27I/i2EkiL+BfnQPd2zIo8I5YZYdH9pVz4WvBYpalnEj6ff6WypthNrxZpwW+x6BWGhFKhEnzFfQH1TQI9q5/v17R50SgSs+6GDH0QvqORyqRwanjiL3kFnrNI7+ZxZEI8=
